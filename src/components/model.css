@@ -1,0 +1,96 @@
+.canv {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+#absol {
+    position: absolute;
+    z-index: 0;
+}
+.main {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+}
+#ab {
+    margin-top: 15%;
+    background-color: white;
+    font-size:2em;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 450px;
+    border: solid;
+    color: black;
+    margin: 0;
+    margin-top: 10vh;
+    background-image: url('https://i.postimg.cc/52tD9jK5/5447217050998140073.jpg');
+    background-size: cover;
+}
+#text {
+    flex-direction: column;
+    z-index: 2;
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 6em;
+    text-shadow: 3px 4px 2px black;
+    color: white;
+}
+#ab2 {
+    margin-top: 15%;
+    background-color: aqua;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    background-color: white;
+    font-size:2em;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 450px;
+    border: solid;
+    color: black;
+    margin: 0;
+    background-image: url('https://i.postimg.cc/fbtFXpNJ/5447217050998140074.jpg');
+    background-size: cover;
+    margin-top: 10vh;
+}
+#button_box {
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    visibility: hidden;
+    gap: 5%;
+}
+@media (max-width: 4000px) {
+    #button_box {flex-direction: row;justify-content: center;}
+    #ab {border: solid; width: 500px;height: 150px;margin-top: 15vh;}
+    #ab2 {border: solid; width: 500px;height: 150px;margin-top: 15vh;}
+    #text {font-size: 6em;}
+}
+@media (max-width: 1100px) {
+    #button_box {flex-direction: row;justify-content: center;}
+    #ab {border: solid; width: 500px;height: 150px;margin-top: 10vh;}
+    #ab2 {border: solid; width: 500px;height: 150px;margin-top: 10vh;}
+    #text {font-size: 6em;}
+}
+@media (max-width: 501px) {
+    #button_box {flex-direction: column;gap:5px;justify-content: end;}
+    #ab {width: 100%;border: none;border-top:solid;border-bottom:solid;height: 100px;margin-top: 0px;}
+    #ab2 {width: 100%;border: none;border-top:solid;border-bottom:solid;height: 100px;margin-top: 0px;}
+    #text {font-size: 2.3em;}
+}
